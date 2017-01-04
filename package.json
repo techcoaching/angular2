@@ -1,0 +1,42 @@
+{
+  "name": "angular2",
+  "version": "1.0.0",
+  "description": "basic about angular2",
+  "main": "systemjs.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular2",
+    "getting",
+    "started",
+    "with",
+    "angular2"
+  ],
+  "author": {
+    "name": "TU Tran",
+    "email": "tu.tran@yahoo.com",
+    "url": "tranthanhtu.vn"
+  },
+  "homepage": "tranthanhtu.vn",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/common": "^2.4.1",
+    "@angular/compiler": "^2.4.1",
+    "@angular/core": "^2.4.1",
+    "@angular/forms": "^2.4.1",
+    "@angular/http": "^2.4.1",
+    "@angular/platform-browser": "^2.4.1",
+    "@angular/platform-browser-dynamic": "^2.4.1",
+    "@angular/router": "^3.4.1",
+    "@angular/upgrade": "^2.4.1",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.9",
+    "rxjs": "^5.0.2",
+    "systemjs": "^0.19.41",
+    "ts": "0.0.0",
+    "typescript": "^1.5.0-beta",
+    "zone": "^0.3.4",
+    "zone.js": "^0.7.4"
+  }
+}

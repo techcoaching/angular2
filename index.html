@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular2 sample</title>
+        <meta charset="utf-8"/>
+        <script src="node_modules/core-js/client/shim.min.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/reflect-metadata/reflect.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script>window.autoBootstrap = true; </script>
+        <script src="systemjs.config.js"></script>
+        
+    </head>
+    <body>
+        <default-page>default page will be here.</default-page>
+        <script>
+            System.import("src/main").catch(function(error){console.log(error);});
+        </script>
+    <body>
+</html>
