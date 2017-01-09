@@ -5,8 +5,9 @@ import { CreateUser } from "./createUser";
 
 let routes: Routes = [
     { path: "", redirectTo: "/users", pathMatch: 'full' },
-    { path: 'users', component: Users },
-    { path: 'createUser', component: CreateUser }
+    { path: 'addNewUser', component: CreateUser },
+    { path: 'users', component: Users }
+    
 ];
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
