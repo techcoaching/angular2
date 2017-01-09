@@ -10,6 +10,6 @@ export class Users {
         this.router = router;
     }
     public onEditClicked(userId: string) {
-        this.router.navigate(["/editUser", userId])
+            this.router.navigate(["/editUser", userId,{id1:"optional-parameter"}])
     }
 }

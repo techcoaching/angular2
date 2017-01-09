@@ -5,6 +5,8 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class EditUser{
     constructor(route: ActivatedRoute){
-        console.log("User selected:", route.params.value.id);
+        let requiredIdparam=route.params["value"].id;
+        let optionalIdparam=route.params["value"].id1;
+        console.log("User selected:", requiredIdparam, optionalIdparam);
     }
 }

@@ -10,7 +10,6 @@ let routes: Routes = [
     { path: 'addNewUser', component: CreateUser },
     { path: 'editUser/:id', component: EditUser },
     { path: 'users', component: Users }
-    
 ];
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
