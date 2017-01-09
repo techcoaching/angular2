@@ -1,7 +1,15 @@
 import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { Router } from "@angular/router";
 @Component({
-    selector:"users",
+    selector: "users",
     templateUrl: "src/users.html"
 })
-export class Users { }
+export class Users {
+    private router: Router;
+    constructor(router: Router) {
+        this.router = router;
+    }
+    public onEditClicked(userId: string) {
+        this.router.navigate(["/editUser", userId])
+    }
+}

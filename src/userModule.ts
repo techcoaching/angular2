@@ -3,6 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { Users } from "./users";
 import { CreateUser } from "./createUser";
+import { EditUser } from "./editUser";
 import { UserRoutes } from "./userRoutes";
 import { Layout } from "./layout";
 @NgModule({
@@ -11,7 +12,7 @@ import { Layout } from "./layout";
         FormsModule,
         UserRoutes
     ],
-    declarations: [Users, CreateUser, Layout],
+    declarations: [Users, CreateUser, EditUser, Layout],
     bootstrap: [Layout]
 })
 export class UserModule { }
