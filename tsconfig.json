@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "module": "system",
     "sourceMap": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ]
   },
   "exclude": [
     "node_modules",
-    "typings/main",
-    "typings/main.d.ts",
-    "app/extension.d.ts",
-    "**/*.spec.ts",
-    "**/*.d.ts"
+    "resources/theme/gentallela/vendors"
   ]
 }
