@@ -10,31 +10,13 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<th scope="row">1</th>
-				<td>TU</td>
-				<td>Tran</td>
-				<td>@tutran</td>
+			<tr *ngFor="let user of users">
+				<th scope="row">{{user.id}}</th>
+				<td>{{user.firstName}}</td>
+				<td>{{user.lastName}}</td>
+				<td>{{user.userName}}</td>
 				<td>
-					<a (click)="onEditClicked(1)" title="Edit tutran"><i class="fa fa-edit"></i></a>
-				</td>
-			</tr>
-			<tr>
-				<th scope="row">2</th>
-				<td>TU</td>
-				<td>Tran 1</td>
-				<td>@tutran1</td>
-				<td>
-					<a (click)="onEditClicked(2)" title="Edit tutran1"><i class="fa fa-edit"></i></a>
-				</td>
-			</tr>
-			<tr>
-				<th scope="row">3</th>
-				<td>TU</td>
-				<td>Tran 2</td>
-				<td>@tutran2</td>
-				<td>
-					<a (click)="onEditClicked(3)" title="Edit tutran3"><i class="fa fa-edit"></i></a>
+					<a title=""><i class="fa fa-edit"></i></a>
 				</td>
 			</tr>
 		</tbody>
