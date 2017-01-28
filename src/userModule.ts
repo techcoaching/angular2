@@ -7,13 +7,14 @@ import { EditUser } from "./editUser";
 import { UserRoutes } from "./userRoutes";
 import { Layout } from "./layout";
 import {UserService} from "./userService";
+import {HightlightBaseOnFirstName} from "./hightlightBaseOnFirstName";
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
         UserRoutes
     ],
-    declarations: [Users, CreateUser, EditUser, Layout],
+    declarations: [Users, CreateUser, EditUser, Layout, HightlightBaseOnFirstName],
     bootstrap: [Layout],
     providers:[UserService]
 })
