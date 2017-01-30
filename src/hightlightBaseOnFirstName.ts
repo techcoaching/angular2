@@ -1,19 +1,20 @@
-import { Directive, ElementRef, AfterViewChecked} from "@angular/core";
+import { Directive, ElementRef, AfterViewChecked, Input, Output, EventEmitter } from "@angular/core";
 @Directive({
     selector: "[hightlightBaseOnFirstName]"
 })
 export class HightlightBaseOnFirstName implements AfterViewChecked {
-    private ui: ElementRef = null;
+    @Input() color: string = "white";
+    @Input() text: string = "Tu";
+    @Input() isCustombackground: boolean;
+    @Output() isCustombackgroundChange: EventEmitter<boolean> = new EventEmitter();
+    private dom: any = null;
     constructor(ui: ElementRef) {
-        this.ui = ui;
+        this.dom = ui.nativeElement;
     }
     ngAfterViewChecked() {
-        if (!this.ui) { return; }
-        this.updateBackgroundColor();
-    }
-    private updateBackgroundColor() {
-        let firstName: string = this.ui.nativeElement.innerText;
-        console.log("First name:", firstName);
-        this.ui.nativeElement.style.backgroundColor = firstName == "Tu" ? "red" : "White";
+        let firstName = this.dom.innerText;
+        if (firstName.indexOf(this.text) < 0) { return; }
+        this.dom.style.backgroundColor = this.color;
+        this.isCustombackgroundChange.emit(true);
     }
 }
