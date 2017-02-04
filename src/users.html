@@ -13,7 +13,7 @@
 			<tr *ngFor="let user of users">
 				<th scope="row">{{user.id}}</th>
 				<td hightlightBaseOnFirstName [(isCustombackground)]="user.isCustomBackground" [color]="user.color" text="Tu">{{user.firstName}}</td>
-				<td>{{user.lastName}}</td>
+				<td><a tooltip text="{{user.firstName}} {{user.lastName}}">{{user.lastName}}</a></td>
 				<td>{{user.userName}}</td>
 				<td>
 					<a title=" "><i class="fa fa-edit "></i></a>
@@ -41,3 +41,4 @@
 	</div>
 
 </div>
+<!--<td><span tooltip text="{{user.firstName}} {{user.lastName}}" id="{{'user_'+user.id}}">{{user.lastName}}</span></td>-->
